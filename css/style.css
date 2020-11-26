@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Staatliches&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Lora', serif;
+
+}
+
+#wrapper {
+    display: grid;
+    width: 100%;
+    height: 1000px;
+
+    grid-template-areas: 
+    "nv nv nv nv"
+    "hd hd hd hd"
+    "s1 s1 s2 s2"
+    "s3 s3 s4 s4"
+    "ft ft ft ft"
+    ;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 100vh auto auto 150px;
+}
+
+/* Hem-sidan ---------------------------------------------------------------------- */
+
+nav {
+    grid-area: nv;
+    background-color: slategrey;
+    opacity: 0.7;
+    position: fixed;
+    width: 100%;
+}
+
+nav > ul {
+    box-sizing: border-box;
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+nav > ul > li > img {
+    max-width: 13%;
+    max-height: auto;
+    position: relative;
+
+    display: flex;
+    justify-content: left;
+    flex: 1;
+
+}
+
+nav > ul > li > a {
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal;
+    color: whitesmoke;
+
+    position: relative;
+
+
+    display: flex;
+    flex: 1;
+
+}
+
+nav > ul > li > a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0%;
+    left: 0;
+    background-color: whitesmoke;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out 0s;
+  
+
+}
+
+nav > ul > li > a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+header {
+    grid-area: hd;
+    background: url("../img/sky.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header > img {
+    max-width: 40%;
+    max-height: 40%;
+}
+
+header > h1 {
+    font-size: 50px;
+}
+
+#section1 {
+    grid-area: s1;
+}
+
+#section1 > * {
+    display: flex;
+    justify-content: center;
+}
+
+#section1 > h1 {
+    margin: 125px 30px 0px 30px;
+    font-size: 35px;
+}
+
+#section1 > h2 {
+    margin: 0px 30px 125px 30px;
+    font-size: 23px;
+}
+
+#section2 {
+    grid-area: s2;
+}
+
+#section2 > figure {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+#section2 > figure > img {
+    max-width: 65%;
+    max-height: auto;
+}
+
+#section3 {
+    grid-area: s3;
+}
+
+#section3 > figure {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+#section3 > figure > img {
+    max-width: 70%;
+    max-height: auto;
+}
+
+#section4 {
+    grid-area: s4;
+}
+
+#section4 > * {
+    display: flex;
+    justify-content: center;
+}
+
+#section4 > h1 {
+    margin: 125px 30px 0px 30px;
+    font-size: 35px;
+}
+
+#section4 > h2 {
+    margin: 0px 30px 125px 30px;
+    font-size: 23px;
+}
+
+footer {
+    grid-area: ft;
+    background: grey;
+}
+
+/* Meny-sidan ---------------------------------------------------------------------- */
