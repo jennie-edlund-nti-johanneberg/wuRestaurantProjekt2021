@@ -24,16 +24,18 @@ body {
     ;
 
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 100vh auto auto 15%;
+    grid-template-rows: auto 100vh auto auto 37vh;
 }
+
 /* Hem-sidan ---------------------------------------------------------------------- */
 
 nav {
     grid-area: nv;
-    background-color: slategrey;
-    opacity: 0.7;
+    background-color: rgba(112, 128, 144, 0.7);
     position: fixed;
     width: 100%;
+
+    z-index: 1;
 }
 
 nav > ul {
@@ -52,26 +54,24 @@ nav > ul > #logga {
     justify-content: left;
     align-items: center;
     flex: 1;
-    margin-left: -20px;
+    margin-left: -1.5%;
 }
 
 nav > ul > li > p {
     position: relative;
-    margin-left: 10px;
 
-    font-size: 24px;
+    font-size: 170%;
     font-family: 'Nerko One', cursive;
     color: whitesmoke;
 }
 
 nav > ul > li > img {
     max-width: 8%;
-    max-height: auto;
     position: relative;
 }
 
 nav > ul > li > a {
-    padding: 20px 40px;
+    padding: 20px 40px; 
     text-decoration: none;
     font-size: 20px;
     font-weight: normal;
@@ -140,6 +140,8 @@ header {
 
 #section1_hem {
     grid-area: s1;
+    color: slategray;
+    text-shadow: 0px 0px 1px slategray;
 }
 
 #section1_hem > * {
@@ -147,12 +149,12 @@ header {
     justify-content: center;
 }
 
-#section1_hem > h1 {
+#section1_hem > h3 {
     margin: 125px 30px 0px 30px;
     font-size: 35px;
 }
 
-#section1_hem > h2 {
+#section1_hem > h4 {
     margin: 0px 30px 125px 30px;
     font-size: 23px;
 }
@@ -169,7 +171,10 @@ header {
 
 #section2_hem > figure > img {
     max-width: 65%;
-    max-height: auto;
+
+    box-shadow: 4px 4px 4px rgb(42, 49, 56);
+    border-radius: 2px;
+    opacity: 0.87;
 }
 
 #section3_hem {
@@ -184,11 +189,16 @@ header {
 
 #section3_hem > figure > img {
     max-width: 70%;
-    max-height: auto;
+
+    box-shadow: 4px 4px 4px rgb(42, 49, 56);
+    border-radius: 2px;
+    opacity: 0.85;
 }
 
 #section4_hem {
     grid-area: s4;
+    color: slategray;
+    text-shadow: 0px 0px 1px slategray;
 }
 
 #section4_hem > * {
@@ -196,12 +206,12 @@ header {
     justify-content: center;
 }
 
-#section4_hem > h1 {
+#section4_hem > h3 {
     margin: 125px 30px 0px 30px;
     font-size: 35px;
 }
 
-#section4_hem > h2 {
+#section4_hem > h4 {
     margin: 0px 30px 125px 30px;
     font-size: 23px;
 }
@@ -214,12 +224,12 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
-
 }
 
 footer > * {
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: baseline;
 }
 
 footer > div > * {
@@ -227,7 +237,9 @@ footer > div > * {
     text-shadow: 0px 0px 3px rgb(91, 103, 116);
 }
 
-
+footer > div > p {
+    font-size: 20px;
+}
 
 /* Meny-sidan ---------------------------------------------------------------------- */
 
@@ -244,7 +256,7 @@ footer > div > * {
     ;
 
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 40vh auto 15%;
+    grid-template-rows: auto 40vh auto 37vh;
 
 }
 
@@ -256,6 +268,10 @@ footer > div > * {
 
 #section_meny {
     grid-area: se;
+
+    background: url("../img/sky.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #section_meny > ul {
@@ -263,10 +279,31 @@ footer > div > * {
 
     display: flex;
     flex-direction: column;
+
+    background-color: rgba(112, 128, 144, 0.5);
+    margin: 0% 5% 10% 10%;
+    padding: 20px;
 }
 
-#section_meny > ul > * {
+#section_meny > ul > li {
+    display: flex;
+    flex-direction: row;
+
     margin: 30px;
+}
+
+#section_meny > ul > li > * {
+    margin: 10px;
+    color: whitesmoke;
+    text-shadow: 0px 0px 3px slategray;
+} 
+
+#section_meny > ul > li > img {
+    max-width: 12%;
+
+    box-shadow: 3px 3px 4px rgb(42, 49, 56);
+    border-radius: 2px;
+    opacity: 0.85;
 }
 
 /* Omoss-sidan ---------------------------------------------------------------------- */
@@ -285,7 +322,7 @@ footer > div > * {
     ;
 
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 40vh auto 40vh 15%;
+    grid-template-rows: auto 40vh auto 40vh 37vh;
 }
 
 #omoss_header > h1 {
@@ -342,4 +379,11 @@ footer > div > * {
     testa med olika browsers
     skisser ska in
     color chehecker 
+
+    lagermask på logga
+    validate css bilder ska in
+    ändra alt och matträtter
+
+    frågor
+    skisser och nav typ
 */
