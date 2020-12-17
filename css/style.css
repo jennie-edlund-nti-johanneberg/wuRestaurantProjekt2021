@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 * {
     margin: 0;
@@ -31,7 +32,7 @@ body {
 
 nav {
     grid-area: nv;
-    background-color: rgba(112, 128, 144, 0.7);
+    background-color: rgba(92, 105, 114, 0.7);
     position: fixed;
     width: 100%;
 
@@ -140,7 +141,7 @@ header {
 
 #section1_hem {
     grid-area: s1;
-    color: grey;
+    color: #4d5155;
     text-shadow: 0px 0px 1px rgb(206, 206, 206);
 }
 
@@ -197,7 +198,7 @@ header {
 
 #section4_hem {
     grid-area: s4;
-    color: grey;
+    color: #4d5155;
     text-shadow: 0px 0px 1px rgb(206, 206, 206);
 }
 
@@ -218,7 +219,7 @@ header {
 
 footer {
     grid-area: ft;
-    background: grey;
+    background: #4d5155;
 
     display: flex;
     align-items: center;
@@ -280,7 +281,7 @@ footer > div > p {
     display: flex;
     flex-direction: column;
 
-    background-color: rgba(112, 128, 144, 0.5);
+    background-color: rgba(92, 105, 114, 0.6);
     margin: 0% 5% 10% 10%;
     padding: 20px;
 }
@@ -297,6 +298,12 @@ footer > div > p {
     color: whitesmoke;
     text-shadow: 0px 0px 3px slategray;
 } 
+
+#section_meny > ul > li > div > p {
+    font-family: 'Lato', sans-serif;
+    line-height: 25px;
+} 
+
 
 #section_meny > ul > li > img {
     max-width: 12%;
@@ -340,7 +347,7 @@ footer > div > p {
 
 #section1_omoss > div {
     z-index: 1;
-    background-color: rgba(112, 128, 144, 0.5);
+    background-color: rgba(92, 105, 114, 0.6);
 
     margin: 0% 15%;
     padding: 4% 0%;
@@ -348,9 +355,20 @@ footer > div > p {
 }
 
 #section1_omoss > div > p {
-    margin: 4% 15%;
+    margin: 2% 15% 4% 15%;
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    line-height: 25px;
+
+    text-shadow: 0px 0px 3px slategray;
+
+}
+
+#section1_omoss > div > h2 {
+    margin: 3% 15% 0% 15%;
+    color: whitesmoke;
+    font-size: 25px;
 
     text-shadow: 0px 0px 3px slategray;
 
@@ -374,16 +392,3 @@ footer > div > p {
 #section_omoss > ul > * {
     margin: 30px;
 }
-
-/* 
-    testa med olika browsers
-    skisser ska in
-    color checker 
-    skriv om att lite ändringar från skisser
-    filma in sin sida
-
-    lägga in logga i clasroom
-
-    frågor
-
-*/
