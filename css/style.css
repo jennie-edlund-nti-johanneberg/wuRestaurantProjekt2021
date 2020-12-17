@@ -140,8 +140,8 @@ header {
 
 #section1_hem {
     grid-area: s1;
-    color: slategray;
-    text-shadow: 0px 0px 1px slategray;
+    color: grey;
+    text-shadow: 0px 0px 1px rgb(206, 206, 206);
 }
 
 #section1_hem > * {
@@ -174,7 +174,7 @@ header {
 
     box-shadow: 4px 4px 4px rgb(42, 49, 56);
     border-radius: 2px;
-    opacity: 0.87;
+    opacity: 0.95;
 }
 
 #section3_hem {
@@ -192,13 +192,13 @@ header {
 
     box-shadow: 4px 4px 4px rgb(42, 49, 56);
     border-radius: 2px;
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
 #section4_hem {
     grid-area: s4;
-    color: slategray;
-    text-shadow: 0px 0px 1px slategray;
+    color: grey;
+    text-shadow: 0px 0px 1px rgb(206, 206, 206);
 }
 
 #section4_hem > * {
@@ -375,15 +375,15 @@ footer > div > p {
     margin: 30px;
 }
 
-/* validate sida
+/* 
     testa med olika browsers
     skisser ska in
-    color chehecker 
+    color checker 
+    skriv om att lite ändringar från skisser
+    filma in sin sida
 
-    lagermask på logga
-    validate css bilder ska in
-    ändra alt och matträtter
+    lägga in logga i clasroom
 
     frågor
-    skisser och nav typ
+
 */
